@@ -17,7 +17,7 @@ public class RenderModel extends AbstractRenderModel {
         GL11.glColor3f(0.5f, 0.5f, 1.0f);
         GL11.glPolygonMode(GL11.GL_FRONT_AND_BACK, GL11.GL_LINE);
         GL11.glLoadIdentity(); // Reset The View
-        GL11.glTranslatef(0, 0.0f, -6.0f); // Move Right 3 Units
+        GL11.glTranslatef(0, 0.0f, -6.0f);
         // draw quad
         GL11.glPushMatrix();
         //GL11.glTranslatef(x, y, 0);
@@ -30,16 +30,25 @@ public class RenderModel extends AbstractRenderModel {
     }
 
     private void drawCube(){
-        drawSquare3D(0);
-        drawSquare3D(1);
+        for (int i=0; i<4;i++){
+            drawCubeSlice(i);
+        }
     }
 
-    private void drawSquare3D(float start){
+    private void drawCubeSlice(int z) {
+        drawSquare3D(0,0,z);
+        drawSquare3D(1,0,z);
+        drawSquare3D(1,1,z);
+        drawSquare3D(0,1,z);
+    }
+
+
+    private void drawSquare3D(float x, float y, float z){
         GL11.glBegin(GL11.GL_QUADS);                      // Draw A Quad
-        GL11.glVertex3f(start -1.0f, start + 1.0f, start);              // Top Left
-        GL11.glVertex3f(start + 1.0f, start + 1.0f, start);              // Top Right
-        GL11.glVertex3f(start +1.0f, start -1.0f, start);              // Bottom Right
-        GL11.glVertex3f(start -1.0f, start -1.0f, start);              // Bottom Left
+        GL11.glVertex3f(x -1.0f, y + 1.0f, z);              // Top Left
+        GL11.glVertex3f(x + 1.0f, y + 1.0f, z);              // Top Right
+        GL11.glVertex3f(x +1.0f, y -1.0f, z);              // Bottom Right
+        GL11.glVertex3f(x -1.0f, y -1.0f, z);              // Bottom Left
         GL11.glEnd();                            // Done Drawing The Quad
     }
 

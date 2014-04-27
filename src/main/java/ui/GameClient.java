@@ -7,6 +7,7 @@ import org.lwjgl.input.Mouse;
 import org.lwjgl.opengl.Display;
 import org.lwjgl.opengl.DisplayMode;
 import org.lwjgl.opengl.GL11;
+import org.lwjgl.util.glu.GLU;
 
 /**
  * Created by till on 4/24/14.
@@ -32,8 +33,15 @@ public class GameClient {
             // init OpenGL here
             GL11.glMatrixMode(GL11.GL_PROJECTION);
             GL11.glLoadIdentity();
-            GL11.glOrtho(0, 800, 0, 600, 1, -1);
+            GLU.gluPerspective(45f, 800 / 600, 0.1f, 100.f);
+            //GL11.glOrtho(0, 800, 0, 600, 1, -1);
             GL11.glMatrixMode(GL11.GL_MODELVIEW);
+            GL11.glLoadIdentity();
+            GL11.glShadeModel(GL11.GL_SMOOTH); // Enables Smooth Shading
+            GL11.glClearDepth(1.0f); // Depth Buffer Setup
+            GL11.glEnable(GL11.GL_DEPTH_TEST); // Enables Depth Testing
+            GL11.glDepthFunc(GL11.GL_LEQUAL); // The Type Of Depth Test To Do
+            GL11.glHint(GL11.GL_PERSPECTIVE_CORRECTION_HINT, GL11.GL_NICEST); // Really Nice Perspective Calculations
 
             renderModel = new RenderModel();
         } catch (LWJGLException e) {
@@ -51,6 +59,10 @@ public class GameClient {
 
         while (!Display.isCloseRequested()) {
             lastframe = SystemUtilHelper.getTime();
+            
+            if (Display.wasResized()){
+                resize();
+            }
             renderWorld();
 
 
@@ -61,12 +73,41 @@ public class GameClient {
         Display.destroy();
     }
 
+    private void resize() {
+        GL11.glViewport(0,0,Display.getWidth(),Display.getHeight());
+    }
+
     private void renderWorld() {
         // Clear the screen and depth buffer
         GL11.glClear(GL11.GL_COLOR_BUFFER_BIT | GL11.GL_DEPTH_BUFFER_BIT);
 
         renderModel.render();
+        //testRender();
         Display.update();
+        Display.sync(60);
+    }
+
+    private void testRender(){
+
+        GL11.glClear(GL11.GL_COLOR_BUFFER_BIT | GL11.GL_DEPTH_BUFFER_BIT); // Clear The Screen And The Depth Buffer
+        GL11.glLoadIdentity(); // Reset The View
+
+        GL11.glTranslatef(-1.5f, 0.0f, -6.0f); // Move Left 1.5 Units And Into The Screen 6.0
+
+        GL11.glBegin(GL11.GL_TRIANGLES); // Drawing Using Triangles
+        GL11.glVertex3f(0.0f, 1.0f, 0.0f); // Top
+        GL11.glVertex3f(-1.0f, -1.0f, 0.0f); // Bottom Left
+        GL11.glVertex3f(1.0f, -1.0f, 0.0f); // Bottom Right
+        GL11.glEnd(); // Finished Drawing The Triangle
+
+        GL11.glTranslatef(3.0f, 0.0f, 0.0f); // Move Right 3 Units
+
+        GL11.glBegin(GL11.GL_QUADS); // Draw A Quad
+        GL11.glVertex3f(-1.0f, 1.0f, 0.0f); // Top Left
+        GL11.glVertex3f(1.0f, 1.0f, 0.0f); // Top Right
+        GL11.glVertex3f(1.0f, -1.0f, 0.0f); // Bottom Right
+        GL11.glVertex3f(-1.0f, -1.0f, 0.0f); // Bottom Left
+        GL11.glEnd(); // Done Drawing The Quad
     }
 
     private void update(long delta) {

@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="627c8b93-16e0-4aa1-bc62-6f4d161c4dc6" name="Default" comment="Refactoring" />
+    <list default="true" id="627c8b93-16e0-4aa1-bc62-6f4d161c4dc6" name="Default" comment="Refactoring">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ui/GameClient.java" afterPath="$PROJECT_DIR$/src/main/java/ui/GameClient.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ui/RenderModel.java" afterPath="$PROJECT_DIR$/src/main/java/ui/RenderModel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jlwgl-test.iml" afterPath="$PROJECT_DIR$/jlwgl-test.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="jlwgl-test.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -67,7 +73,7 @@
       <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="0" selection-start="1693" selection-end="1693" vertical-scroll-proportion="0.0" vertical-offset="918" max-vertical-offset="1584">
+            <state line="37" column="37" selection-start="1225" selection-end="1225" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="1728">
               <folding />
             </state>
           </provider>
@@ -94,7 +100,7 @@
       <file leaf-file-name="GameClient.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ui/GameClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="13" selection-start="1603" selection-end="1603" vertical-scroll-proportion="0.0" vertical-offset="1098" max-vertical-offset="2700">
+            <state line="102" column="8" selection-start="3144" selection-end="3202" vertical-scroll-proportion="0.0" vertical-offset="1460" max-vertical-offset="3438">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -114,7 +120,7 @@
       <file leaf-file-name="RenderModel.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/ui/RenderModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="28" selection-start="393" selection-end="393" vertical-scroll-proportion="0.48236954" vertical-offset="0" max-vertical-offset="864">
+            <state line="33" column="22" selection-start="855" selection-end="855" vertical-scroll-proportion="0.41489363" vertical-offset="360" max-vertical-offset="1188">
               <folding />
             </state>
           </provider>
@@ -133,15 +139,15 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/config/log4j.properties" />
         <option value="$PROJECT_DIR$/src/main/java/helper/SystemUtilHelper.java" />
         <option value="$PROJECT_DIR$/src/main/java/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/ui/RenderEntity.java" />
         <option value="$PROJECT_DIR$/src/main/java/ui/AbstractRenderModel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ui/RenderModel.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/ui/GameClient.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ui/RenderModel.java" />
       </list>
     </option>
   </component>
@@ -153,10 +159,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="3280" />
-    <option name="y" value="1074" />
+    <option name="y" value="1102" />
     <option name="width" value="1680" />
-    <option name="height" value="1026" />
+    <option name="height" value="998" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -620,7 +625,7 @@
       <workItem from="1398363569852" duration="416000" />
       <workItem from="1398375956313" duration="241000" />
       <workItem from="1398376211237" duration="74000" />
-      <workItem from="1398376299149" duration="6101000" />
+      <workItem from="1398376299149" duration="14115000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1395599517533</created>
@@ -642,7 +647,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44198000" />
+    <option name="totallyTimeSpent" value="52212000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -665,17 +670,17 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="3280" y="1074" width="1680" height="1026" extended-state="6" />
-    <editor active="false" />
+    <frame x="0" y="1102" width="1680" height="998" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32985386" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22455405" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22455405" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34732425" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35783783" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32985386" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26785713" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32985386" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -723,13 +728,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="302" selection-end="302" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="558">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/helper/SystemUtilHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="18" selection-start="236" selection-end="236" vertical-scroll-proportion="0.0" vertical-offset="252" max-vertical-offset="432">
@@ -1016,13 +1014,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="0" selection-start="1693" selection-end="1693" vertical-scroll-proportion="0.0" vertical-offset="254" max-vertical-offset="1320">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/lwjgl/lwjgl/lwjgl/2.8.2/lwjgl-2.8.2.jar!/org/lwjgl/input/Keyboard.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="13" selection-start="158" selection-end="158" vertical-scroll-proportion="0.08278146" vertical-offset="0" max-vertical-offset="3270" />
@@ -1068,9 +1059,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/lwjgl/lwjgl/lwjgl/2.8.2/lwjgl-2.8.2.jar!/org/lwjgl/opengl/GL11.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1448" column="23" selection-start="66661" selection-end="66661" vertical-scroll-proportion="0.34837544" vertical-offset="25853" max-vertical-offset="30132">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="37" selection-start="1225" selection-end="1225" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="1728">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ui/GameClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="13" selection-start="1603" selection-end="1603" vertical-scroll-proportion="0.0" vertical-offset="1098" max-vertical-offset="2700">
+        <state line="102" column="8" selection-start="3144" selection-end="3202" vertical-scroll-proportion="0.0" vertical-offset="1460" max-vertical-offset="3438">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1079,7 +1084,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ui/RenderModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="28" selection-start="393" selection-end="393" vertical-scroll-proportion="0.48236954" vertical-offset="0" max-vertical-offset="864">
+        <state line="33" column="22" selection-start="855" selection-end="855" vertical-scroll-proportion="0.41489363" vertical-offset="360" max-vertical-offset="1188">
           <folding />
         </state>
       </provider>

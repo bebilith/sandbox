@@ -33,6 +33,13 @@
         <artifactId>lwjgl</artifactId>
         <version>${lwjgl.version}</version>
     </dependency>
+
+        <dependency>
+            <groupId>org.lwjgl.lwjgl</groupId>
+            <artifactId>lwjgl_util</artifactId>
+            <version>${lwjgl.version}</version>
+        </dependency>
+
         <dependency>
             <groupId>java3d</groupId>
             <artifactId>vecmath</artifactId>
@@ -49,6 +56,7 @@
             <artifactId>log4j</artifactId>
             <version>1.2.17</version>
         </dependency>
+
 
     </dependencies>
 

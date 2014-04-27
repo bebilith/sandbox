@@ -7,9 +7,10 @@ import org.lwjgl.opengl.GL11;
  */
 public class RenderModel extends AbstractRenderModel {
 
-    private int x;
+    private int camX =0;
     private float rotation;
-    private int y;
+    private int camY =0;
+    private int camZ =-6;
 
     @Override
     protected void renderThis() {
@@ -17,16 +18,19 @@ public class RenderModel extends AbstractRenderModel {
         GL11.glColor3f(0.5f, 0.5f, 1.0f);
         GL11.glPolygonMode(GL11.GL_FRONT_AND_BACK, GL11.GL_LINE);
         GL11.glLoadIdentity(); // Reset The View
-        GL11.glTranslatef(0, 0.0f, -6.0f);
-        // draw quad
+
+
         GL11.glPushMatrix();
-        //GL11.glTranslatef(x, y, 0);
-        GL11.glRotatef(rotation, 0f, 0f, 1f);
-        //GL11.glTranslatef(-x, -y, 0);
+        moveCube();
         drawCube();
-        //drawSquare2d();
 
         GL11.glPopMatrix();
+    }
+
+    private void moveCube(){
+        GL11.glTranslatef(camX, camY, camZ);
+        //GL11.glTranslatef(0,0,-6);
+        GL11.glRotatef(rotation, 0f, 0f, 1f);
     }
 
     private void drawCube(){
@@ -61,9 +65,23 @@ public class RenderModel extends AbstractRenderModel {
         GL11.glEnd();
     }
 
-    public void update(final int x, final int y, final float rotation) {
-        this.x = x;
-        this.y = y;
+    /**
+     * Moves entire model by delta units along the X axis
+     * @param delta
+     */
+    public void moveX (int delta){
+        this.camX+=delta;
+    }
+
+    public void moveZ (int delta){
+        this.camZ +=delta;
+    }
+
+    public void update(final float rotation) {
         this.rotation = rotation;
+    }
+
+    public void moveY(int delta) {
+        this.camY += delta;
     }
 }

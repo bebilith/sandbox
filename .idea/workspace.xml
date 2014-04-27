@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="627c8b93-16e0-4aa1-bc62-6f4d161c4dc6" name="Default" comment="Refactoring">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ui/GameClient.java" afterPath="$PROJECT_DIR$/src/main/java/ui/GameClient.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ui/RenderModel.java" afterPath="$PROJECT_DIR$/src/main/java/ui/RenderModel.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -94,13 +95,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GameClient.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="GameClient.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/ui/GameClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="78" column="0" selection-start="2281" selection-end="2281" vertical-scroll-proportion="0.0" vertical-offset="1134" max-vertical-offset="2934">
-              <folding>
-                <element signature="method#testRender#0;class#GameClient#0" expanded="false" />
-              </folding>
+            <state line="141" column="33" selection-start="4357" selection-end="4357" vertical-scroll-proportion="0.5925926" vertical-offset="2124" max-vertical-offset="3402">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -114,10 +113,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RenderModel.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="RenderModel.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ui/RenderModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="43" selection-start="501" selection-end="501" vertical-scroll-proportion="0.5555556" vertical-offset="72" max-vertical-offset="1350">
+            <state line="30" column="38" selection-start="670" selection-end="670" vertical-scroll-proportion="0.0" vertical-offset="36" max-vertical-offset="1674">
               <folding />
             </state>
           </provider>
@@ -143,8 +142,8 @@
         <option value="$PROJECT_DIR$/src/main/java/ui/RenderEntity.java" />
         <option value="$PROJECT_DIR$/src/main/java/ui/AbstractRenderModel.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/ui/GameClient.java" />
         <option value="$PROJECT_DIR$/src/main/java/ui/RenderModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ui/GameClient.java" />
       </list>
     </option>
   </component>
@@ -156,9 +155,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="-4" />
+    <option name="y" value="24" />
     <option name="width" value="1600" />
-    <option name="height" value="904" />
+    <option name="height" value="876" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -259,16 +258,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -417,6 +406,16 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -487,20 +486,22 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+    <configuration default="true" type="Specs2RunConfiguration" factoryName="Specs2">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <extension name="scalaCoverage" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="$PROJECT_DIR$" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -529,6 +530,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -565,6 +579,21 @@
       </option>
       <envs />
       <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="ScalaTestRunConfiguration" factoryName="ScalaTest">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <extension name="scalaCoverage" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="$PROJECT_DIR$" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
       <method />
     </configuration>
     <list size="1">
@@ -623,7 +652,8 @@
       <workItem from="1398375956313" duration="241000" />
       <workItem from="1398376211237" duration="74000" />
       <workItem from="1398376299149" duration="15549000" />
-      <workItem from="1398609366971" duration="1813000" />
+      <workItem from="1398609366971" duration="5157000" />
+      <workItem from="1398623742616" duration="105000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1395599517533</created>
@@ -645,7 +675,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55459000" />
+    <option name="totallyTimeSpent" value="58908000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -668,7 +698,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="-4" width="1600" height="904" extended-state="6" />
+    <frame x="0" y="24" width="1600" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -678,7 +708,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26650062" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35740972" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35740972" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32985386" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26785713" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32985386" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -694,8 +724,8 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39979124" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -736,9 +766,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/ui/GameClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="13" selection-start="294" selection-end="294" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="2700">
-          <folding>
-            <element signature="method#testRender#0;class#GameClient#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -780,9 +808,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/ui/GameClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="0" selection-start="438" selection-end="438" vertical-scroll-proportion="0.0" vertical-offset="324" max-vertical-offset="2700">
-          <folding>
-            <element signature="method#testRender#0;class#GameClient#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -824,9 +850,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/ui/GameClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2250">
-          <folding>
-            <element signature="method#testRender#0;class#GameClient#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1017,11 +1041,6 @@
         <state line="6" column="13" selection-start="158" selection-end="158" vertical-scroll-proportion="0.08278146" vertical-offset="0" max-vertical-offset="3270" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/config/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="36" selection-start="510" selection-end="510" vertical-scroll-proportion="0.32846716" vertical-offset="0" max-vertical-offset="548" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="0" selection-start="84" selection-end="84" vertical-scroll-proportion="0.0" vertical-offset="144" max-vertical-offset="432">
@@ -1069,18 +1088,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ui/GameClient.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config/log4j.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="0" selection-start="2281" selection-end="2281" vertical-scroll-proportion="0.0" vertical-offset="1134" max-vertical-offset="2934">
-          <folding>
-            <element signature="method#testRender#0;class#GameClient#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="3" column="31" selection-start="91" selection-end="91" vertical-scroll-proportion="0.11713666" vertical-offset="0" max-vertical-offset="461" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ui/RenderModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="43" selection-start="501" selection-end="501" vertical-scroll-proportion="0.5555556" vertical-offset="72" max-vertical-offset="1350">
+        <state line="30" column="38" selection-start="670" selection-end="670" vertical-scroll-proportion="0.0" vertical-offset="36" max-vertical-offset="1674">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ui/GameClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="141" column="33" selection-start="4357" selection-end="4357" vertical-scroll-proportion="0.5925926" vertical-offset="2124" max-vertical-offset="3402">
           <folding />
         </state>
       </provider>

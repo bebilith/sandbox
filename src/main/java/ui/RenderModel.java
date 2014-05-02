@@ -67,7 +67,7 @@ public class RenderModel extends AbstractRenderModel {
 
     /**
      * Moves entire model by delta units along the X axis
-     * @param delta
+     * @param delta the amount by which to move
      */
     public void moveX (int delta){
         this.camX+=delta;

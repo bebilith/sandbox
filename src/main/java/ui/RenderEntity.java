@@ -8,7 +8,7 @@ public interface RenderEntity extends Renderable {
     /**
      * Registers an entity as child in the scene graph
      *
-     * @param child
+     * @param child the child entity
      */
     public void registerChild(RenderEntity child);
 }

@@ -20,8 +20,6 @@ public class GameClient {
 
     private int width =800,height = 600;
 
-    private int moveX =0, moveY =0, moveZ=0;
-
     private float rotation = 0;
 
     private RenderModel renderModel;
@@ -35,7 +33,7 @@ public class GameClient {
             // init OpenGL here
             GL11.glMatrixMode(GL11.GL_PROJECTION);
             GL11.glLoadIdentity();
-            GLU.gluPerspective(45f, width / height, 0.1f, 100.f);
+            GLU.gluPerspective(45f, (float) width / (float) height, 0.1f, 100.f);
             //GL11.glOrtho(0, 800, 0, 600, 1, -1);
             GL11.glMatrixMode(GL11.GL_MODELVIEW);
             GL11.glLoadIdentity();
@@ -48,7 +46,7 @@ public class GameClient {
             renderModel = new RenderModel();
         } catch (LWJGLException e) {
             logger.error("Failed to init OpenGL! Aborting...", e);
-            System.exit(0);
+            throw new RuntimeException(e);
         }
     }
 
@@ -90,28 +88,6 @@ public class GameClient {
         Display.sync(60);
     }
 
-    private void testRender(){
-
-        GL11.glClear(GL11.GL_COLOR_BUFFER_BIT | GL11.GL_DEPTH_BUFFER_BIT); // Clear The Screen And The Depth Buffer
-        GL11.glLoadIdentity(); // Reset The View
-
-        GL11.glTranslatef(-1.5f, 0.0f, -6.0f); // Move Left 1.5 Units And Into The Screen 6.0
-
-        GL11.glBegin(GL11.GL_TRIANGLES); // Drawing Using Triangles
-        GL11.glVertex3f(0.0f, 1.0f, 0.0f); // Top
-        GL11.glVertex3f(-1.0f, -1.0f, 0.0f); // Bottom Left
-        GL11.glVertex3f(1.0f, -1.0f, 0.0f); // Bottom Right
-        GL11.glEnd(); // Finished Drawing The Triangle
-
-        GL11.glTranslatef(3.0f, 0.0f, 0.0f); // Move Right 3 Units
-
-        GL11.glBegin(GL11.GL_QUADS); // Draw A Quad
-        GL11.glVertex3f(-1.0f, 1.0f, 0.0f); // Top Left
-        GL11.glVertex3f(1.0f, 1.0f, 0.0f); // Top Right
-        GL11.glVertex3f(1.0f, -1.0f, 0.0f); // Bottom Right
-        GL11.glVertex3f(-1.0f, -1.0f, 0.0f); // Bottom Left
-        GL11.glEnd(); // Done Drawing The Quad
-    }
 
     private void update(long delta) {
         renderModel.update(rotation);
@@ -138,10 +114,19 @@ public class GameClient {
 
         if (Keyboard.isKeyDown(Keyboard.KEY_SPACE)) {
             logger.debug("Space pressed");
-        } else if (Keyboard.isKeyDown(Keyboard.KEY_UP)) {
+        }
+
+        if (Keyboard.isKeyDown(Keyboard.KEY_UP)) {
             renderModel.moveZ(1);
         }if (Keyboard.isKeyDown(Keyboard.KEY_DOWN)){
             renderModel.moveZ(-1);
+        }
+
+        if (Keyboard.isKeyDown(Keyboard.KEY_LEFT)) {
+            renderModel.moveX(1);
+        }
+        if (Keyboard.isKeyDown(Keyboard.KEY_RIGHT)) {
+            renderModel.moveX(-1);
         }
 
 

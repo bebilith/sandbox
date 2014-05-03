@@ -12,6 +12,8 @@ public class RenderModel extends AbstractRenderModel {
     private int camY =0;
     private int camZ =-6;
 
+    private float length = 1f, height = 1f, width = 1f;
+
     @Override
     protected void renderThis() {
         // set the color of the quad (R,G,B,A)
@@ -34,20 +36,44 @@ public class RenderModel extends AbstractRenderModel {
     }
 
     private void drawCube(){
-        for (int i=0; i<4;i++){
-            drawCubeSlice(i);
-        }
+
+        GL11.glBegin(GL11.GL_QUADS);
+
+        GL11.glVertex3f(length, -height, -width);
+        GL11.glVertex3f(-length, -height, -width);
+        GL11.glVertex3f(-length, height, -width);
+        GL11.glVertex3f(length, height, -width);
+
+        GL11.glVertex3f(-length, -height, width);
+        GL11.glVertex3f(length, -height, width);
+        GL11.glVertex3f(length, height, width);
+        GL11.glVertex3f(-length, height, width);
+
+        GL11.glVertex3f(length, -height, width);
+        GL11.glVertex3f(length, -height, -width);
+        GL11.glVertex3f(length, height, -width);
+        GL11.glVertex3f(length, height, width);
+
+        GL11.glVertex3f(-length, -height, -width);
+        GL11.glVertex3f(-length, -height, width);
+        GL11.glVertex3f(-length, height, width);
+        GL11.glVertex3f(-length, height, -width);
+
+        GL11.glVertex3f(-length, -height, -width);
+        GL11.glVertex3f(length, -height, -width);
+        GL11.glVertex3f(length, -height, width);
+        GL11.glVertex3f(-length, -height, width);
+
+        GL11.glVertex3f(length, height, -width);
+        GL11.glVertex3f(-length, height, -width);
+        GL11.glVertex3f(-length, height, width);
+        GL11.glVertex3f(length, height, width);
+
+        GL11.glEnd();
     }
 
-    private void drawCubeSlice(int z) {
-        drawSquare3D(0,0,z);
-        drawSquare3D(1,0,z);
-        drawSquare3D(1,1,z);
-        drawSquare3D(0,1,z);
-    }
 
-
-    private void drawSquare3D(float x, float y, float z){
+    private void drawVerticalSquare(float x, float y, float z) {
         GL11.glBegin(GL11.GL_QUADS);                      // Draw A Quad
         GL11.glVertex3f(x -1.0f, y + 1.0f, z);              // Top Left
         GL11.glVertex3f(x + 1.0f, y + 1.0f, z);              // Top Right
@@ -55,6 +81,7 @@ public class RenderModel extends AbstractRenderModel {
         GL11.glVertex3f(x -1.0f, y -1.0f, z);              // Bottom Left
         GL11.glEnd();                            // Done Drawing The Quad
     }
+
 
     private void drawSquare2d() {
         GL11.glBegin(GL11.GL_QUADS);
